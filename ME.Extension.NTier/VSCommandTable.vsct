@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+	<Include href="KnownImageIds.vsct"/>
+	<Include href="VSGlobals.vsct"/>
+
+	<Commands package="ME.Extension.NTier">
+		<Groups>
+			<Group guid="ME.Extension.NTier" id="MyMenuGroup" priority="0x0600">
+				<Parent guid="VSMainMenu" id="ItemNode"/>
+			</Group>
+		</Groups>
+
+		<Buttons>
+			<Button guid="ME.Extension.NTier" id="CreateDto" priority="0x0100" type="Button">
+				<Parent guid="ME.Extension.NTier" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Create Dto</ButtonText>
+					<LocCanonicalName>.ME.Extension.NTier.CreateDto</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="ME.Extension.NTier" id="CreateRepository" priority="0x0101" type="Button">
+				<Parent guid="ME.Extension.NTier" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Create Repository</ButtonText>
+					<LocCanonicalName>.ME.Extension.NTier.CreateRepository</LocCanonicalName>
+				</Strings>
+			</Button>
+
+			<Button guid="ME.Extension.NTier" id="CreateService" priority="0x0110" type="Button">
+				<Parent guid="ME.Extension.NTier" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Create Service</ButtonText>
+					<LocCanonicalName>.ME.Extension.NTier.CreateService</LocCanonicalName>
+				</Strings>
+			</Button>
+
+		</Buttons>
+	</Commands>
+
+	<Symbols>
+		<GuidSymbol name="ME.Extension.NTier" value="{5bd181d4-cece-425d-baf4-1390061edf9a}">
+			<IDSymbol name="MyMenuGroup" value="0x0001" />
+			<IDSymbol name="CreateDto" value="0x0100" />
+			<IDSymbol name="CreateRepository" value="0x0101" />
+			<IDSymbol name="CreateService" value="0x0110" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>

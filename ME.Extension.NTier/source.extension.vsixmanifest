@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" ?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="ME.Extension.NTier.9a4045c7-fc38-4d40-96a6-e928435dd46c" Version="1.0" Language="en-US" Publisher="BugraME" />
+        <DisplayName>ME.Extension.NTier</DisplayName>
+        <Description xml:space="preserve">This extension provides options to the context menu for creating essential components for projects working with N-Tier Architecture. The extension includes commands to automatically create Entity, Dto, Repository, and ServiceHelper items directly from the context menu by selecting "Create Dto," "Create Repository," or "Create Service."</Description>
+        <Icon>Resources\Icon.png</Icon>
+        <PreviewImage>Resources\Icon.png</PreviewImage>
+        <Tags>Extension, NTier, Architecture, Dto, Repository, Service</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+</PackageManifest>
